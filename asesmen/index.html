@@ -2,36 +2,27 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Asesmen DTBS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Asesmen</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Mencegah scroll ganda */
-            background-color: #f4f7f6;
+        /* CSS ini untuk memastikan aplikasi tampil penuh di layar HP/Laptop tanpa terpotong */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #f1f3f4; /* Warna latar belakang (opsional) */
         }
-        .layar-penuh {
-            position: absolute;
-            /* Trik rahasia: Menggeser layar ke atas sejauh 35px untuk memotong banner Google */
-            top: -35px; 
-            left: 0;
-            width: 100%;
-            height: calc(100% + 35px); /* Menambah tinggi agar bawahnya tidak ngatung */
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        iframe { 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+            display: block;
         }
     </style>
 </head>
 <body>
-
-    <div class="layar-penuh">
-        <iframe src="https://script.google.com/macros/s/AKfycbzaPcZBauc04hWNlLf4P9VtqP6jTXlzAQNWw5VrwaGSKIHYCw9ol8FWNJ0gzIZbYpBkZQ/exec"></iframe>
-    </div>
-
+    <!-- Ini adalah link Web App Google Apps Script Anda -->
+    <iframe src="https://script.google.com/macros/s/AKfycbzaPcZBauc04hWNlLf4P9VtqP6jTXlzAQNWw5VrwaGSKIHYCw9ol8FWNJ0gzIZbYpBkZQ/exec"></iframe>
 </body>
 </html>
